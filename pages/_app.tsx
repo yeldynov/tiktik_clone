@@ -11,11 +11,11 @@ import '../styles/globals.css';
 export default function App({ Component, pageProps }: AppProps) {
   const [isSSR, setIsSSR] = useState(true);
 
-  useEffect(() => {
-    setIsSSR(false);
-  }, []);
+  // useEffect(() => {
+  //   setIsSSR(false);
+  // }, []);
 
-  if (isSSR) return null;
+  // if (isSSR) return null;
 
   return (
     <GoogleOAuthProvider
